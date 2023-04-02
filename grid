@@ -1,0 +1,112 @@
+@font-face {
+  font-family: righteous;
+  src: url(righteous.ttf);
+}
+
+body {
+  font-family: righteous;
+  background-color: yellow;
+  color: white;
+  overflow:hidden;
+}
+
+#header {
+  display: grid;
+  background-color: black;
+  height: 140%;
+  grid-row: 1;
+  padding: 20px;
+  background-color: green;
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  grid-template-columns: 1fr 500px 1fr;
+  align-items: center;
+  gap: 580px;
+  width: 2600px;
+  padding: 10px;
+}
+
+#name {
+  margin-left: 35px;
+}
+
+.suggestionsForm {
+  display: flex;
+  gap: 10px;
+}
+
+#suggestions {
+  width: 300px;
+}
+
+#mainContainer{
+    display:grid;
+    grid-template-columns:repeat(3, 500px);
+    grid-template-rows:100px 400px;
+}
+
+#sidebar {
+  display: grid;
+  background-color: green;
+  color:white;
+  flex-wrap: wrap;
+  width: 275px;
+  height: 95vh;
+  position:relative;
+  right:15px;
+  bottom:20px;
+  grid-column:1;
+  grid-row:1;
+  align-items: center;
+}
+
+.pages {
+  display: grid;
+  grid-template-rows: 140px;
+}
+
+ul {
+  display:grid;
+    list-style: none;
+    row-gap:5px;
+  
+}
+
+#projectHeader{
+    grid-row:1;
+}
+
+#projects {
+  color: green;
+  display: grid;
+  grid-column-start:2;
+  grid-row-start:2;
+  column-gap: 30px;
+}
+
+#projectOne{
+  display:flex;
+  flex-direction:column;
+  background-color:green;
+  color:white;
+  padding:20px;
+  grid-row:2;
+  border-radius:20px;
+  border-color:green;
+  border-style:solid;
+  width:500px;
+}
+
+#projectTwo{
+  display:grid; 
+  background-color:green;
+  color:white;
+  grid-column:2;
+  grid-row:2;
+  border-radius:20px;
+  border-color:green;
+  border-style:solid;
+  width:500px;
+  padding:20px;
+}
