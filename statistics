@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HeadFuns Headphones</title>
+  </head>
+  <body>
+    <div id="headerContainer">
+      <header id="header">
+        <h1 id="name">HeadFuns Headphones</h1>
+        <h2 id="slogan"><em>Headphones with a Fun Twist</em></h2>
+
+        <form>
+          <label class="searchForm" for="suggestions">
+            <input
+              class="searchForm"
+              id="suggestions"
+              type="text"
+              name="suggestion"
+              pattern="^[a-zA-Z0-9]$"
+            />
+            <button class="searchForm" id="searchButton" type="button">
+              Search
+            </button>
+          </label>
+        </form>
+      </header>
+    </div>
+
+    <main>
+      <div id="mainContainer">
+        <h2 id="statsTitle">2023 Statistics</h2>
+        <div class="stats" id="statisticsOne">
+          <h2 class="sales">Sales</h2>
+          <p id="money">$125,635</p>
+        </div>
+        <div class="stats" id="statisticsTwo">
+          <h2 class="customerReviews">Reviews</h2>
+          <p class="reviews">95% Positive / 5% Negative
+        </div>
+        <div class="stats" id="statisticsThree">
+          <h2 id="newConsumers">Consumer Count</h2>
+          <p id="consumerCount">2000/month</p>
+        </div>
+
+        <div id="sidebar">
+          <ul>
+            <li class="pages"><h2 id="dashboardTitle">Dashboard</h2></li>
+            <li class="pages">Home</li>
+            <li class="pages">Customer Base</li>
+            <li class="pages">Customer Suggestions</li>
+            <li class="pages">User Management</li>
+            <li class="pages">Settings & Configuration</li>
+            <li class="pages">Support</li>
+            <li class="pages">Schedule</li>
+            <li class="pages">Logout</li>
+          </ul>
+        </div>
+
+        <div id="projects">
+          <h2 id="projectHeader">Projects in Development</h2>
+          <div id="projectOne">
+            <h2 class="projectOneP">1. ) A.I Controlled Headphones</h2>
+            <p class="projectOneP">
+              These headphones are currently in development and are set to
+              release in late 2025. They are controlled by A.I and allow for a
+              whimsical headphones experience.
+            </p>
+            <p class="projectOneP">
+              The A.I aspect of these headphones allow for an A.I to give song
+              suggestions based on what you currently listen to alongside
+              automatically turning up your phone at your request!
+            </p>
+            <p class="projectOneP">
+              The headphones are capable of 20 hours of non-stop use and come
+              with complete cancellation of any noise. Altogether, these
+              headphones are able to deliver automatic use through A.I alongside
+              a welcoming noise free experience!
+            </p>
+          </div>
+          <div id="projectTwo">
+            <h2 class="title">2. ) Barkphones</h2>
+            <p class="projectTwoP">
+              Have you ever seen those headphones with cat ears on them? Well,
+              have we got a treat for you! Barkphones, releasing in late 2023,
+              these headphones feature dog ears, lifelike dog fur that is soft
+              to the touch, an optional nosepiece and an immersive experience
+              for dog lovers alike!
+            </p>
+            <p class="projectTwoP">
+              To give this immersive experience we have given the headphones a
+              bark that comes on when the battery is low and gets louder the
+              lower the battery gets! The bark is also sounded to signal when
+              the headphones are turning on or powering off.
+            </p>
+            <p class="projectTwoP">
+              Overall, these headphones serve to immerse lovers of the man's
+              best friend!
+            </p>
+          </div>
+          <div id="projectThree">
+            <h2 class="projectThreeP">3. ) Heart Headphones</h2>
+            <p class="projectThreeP">
+              Do you love someone? Well, have we got a treat for you!
+            </p>
+            <p class="projectThreeP">
+              Releasing in 2024, these heart-shaped red velvet colored
+              headphones can reach both you and your lover through wireless and
+              love connection! This might sound crazy, but these headphones can
+              sense love between two individuals and allows for both lovers to
+              listen to their favorite music together!<
+            </p>
+            <p class="projectThreeP">
+              Overall, these headphones are made for you and your lover to have
+              unforgettable days of music together!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+
+@font-face {
+  font-family: righteous;
+  src: url(righteous.ttf);
+}
+
+body {
+  font-family: righteous;
+  background-color: yellow;
+  color: white;
+  overflow:hidden;
+}
+
+#header {
+  display: grid;
+  background-color: black;
+  height: 140%;
+  grid-row: 1;
+  padding: 20px;
+  background-color: green;
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  grid-template-columns: 1fr 500px 450px;
+  align-items: center;
+  gap: 580px;
+  width: 2600px;
+  padding: 10px;
+}
+
+#name {
+  margin-left: 35px;
+}
+
+#searchButton{
+  background-color:yellow;
+  font-family:righteous;
+  border-radius:20px;
+  border-style:solid;
+  padding:10px;
+  color:green;
+  border-color:green;
+  font-size:15px;
+}
+
+.suggestionsForm {
+  display: flex;
+  gap: 10px;
+}
+
+#suggestions {
+  width: 300px;
+}
+
+#mainContainer{
+    display:grid;
+    grid-template-columns:250px 100px 500px 100px 765px;
+    grid-template-rows:100px 300px 300px;
+}
+
+.stats{
+  border-radius:20px;
+  border-style:solid;
+  border-color:white;
+}
+
+#statsTitle{
+  color:green;
+  color:white;
+  background-color:green;
+  display:grid;
+  grid-column:3;
+  grid-row:1;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  position:relative;
+  height:100%;
+  width:2000px;
+}
+
+#statisticsOne{
+  background-color:white;
+  display:grid;
+  grid-column:3;
+  grid-row:2;
+  justify-content:center;
+  align-items:center;
+  font-size:60px;
+  color:green;
+  width:650px;
+  height:400px;
+}
+
+.sales{
+  font-size:75px;
+}
+
+#money{
+  font-size:50px;
+  position:relative;
+  right:8px;
+}
+
+#statisticsTwo{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+  width:800px;
+  grid-column:5;
+  grid-row:2;
+  height:400px;
+  color:green;
+  background-color:white;
+}
+
+
+
+.customerReviews{
+  font-size:75px;
+  display:grid;
+  justify-content:center;
+}
+
+.reviews{
+  display:flex;
+  font-size:50px;
+  background-image:linear-gradient(to right, green, green, green, green, green, red, red, red, red, red);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+#statisticsThree{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+  width:631px;
+  grid-column:6;
+  grid-row:2;
+  height:400px;
+  color:green;
+  background-color:white;
+}
+
+#sidebar {
+  display: grid;
+  background-color: green;
+  color:white;
+  width: 275px;
+  height: 95vh;
+  position:relative;
+  right:10px;
+  bottom:20px;
+  grid-column:1;
+  grid-row:1;
+}
+
+.pages {
+  display: grid;
+  grid-template-rows: 100px;
+  position:relative;
+  left:20px;
+}
+
+ul {
+    display:grid;
+    list-style: none;
+    row-gap:5px;
+  
+}
+
+#projectHeader{
+    grid-row:2;
+}
+
+#projects {
+  color: green;
+  display: grid;
+  grid-column-start:3;
+  grid-row-start:4;
+  column-gap: 30px;
+}
+
+#projectOne{
+  display:flex;
+  flex-direction:column;
+  background-color:green;
+  color:white;
+  padding:20px;
+  grid-row:3;
+  border-radius:20px;
+  border-color:green;
+  border-style:solid;
+  width:500px;
+}
+
+#projectTwo{
+  display:grid; 
+  background-color:green;
+  color:white;
+  grid-column:2;
+  grid-row:3;
+  border-radius:20px;
+  border-color:green;
+  border-style:solid;
+  width:500px;
+  padding:20px;
+}
+
+#projectThree{
+  display:grid;
+  grid-column:3;
+  grid-row:3;
+  background-color:green;
+  color:white;
+  width:500px;
+  padding:20px;
+  border-radius:20px;
+}
+
+#newConsumers{
+  font-size:55px;
+}
+
+#consumerCount{
+  font-size:50px;
+}
