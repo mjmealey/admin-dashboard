@@ -1,45 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wireless Ear</title>
-</head>
-<body>
-    <div id="container">
-       <div id="header">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HeadFuns Headphones</title>
+  </head>
+  <body>
+
+    <div id="headerContainer">
+      <header id="header">
         <h1 id="name">HeadFuns Headphones</h1>
-        <h2 id="slogan">Headphones with a Fun Twist</h2>
-       </div> 
-       <div id="sidebar">
-        <h2>Dashboard</h2>
-        <ul>
-            <li class="pages">Home</li>
-            <li class="pages">Customer Base</li>
-            <li class="pages">User Management</li>
-            <li class="pages">Settings & Configuration</li>
-            <li class="pages">Support</li>
-            <li class="pages">Schedule</li>
-            <li class="pages">Logout</li>
-        </ul>
-       </div>
-       <div id="projects">
-        <h2>Projects</h2>
-        <div id="projectOne">
-        <h2 class="title">The A.I Controlled Headphones</h2>
-            <p class="projectOneP">These headphones are currently in development and are set to release in late 2025. They are controlled by A.I and allow for a whimsical headphones experience.</p>
-            <p class="projectOneP">The A.I aspect of these headphones allow for an A.I to give song suggestions based on what you currently listen to alongside automatically turning up your phone at your request!</p>
-            <p class="projectOneP">The headphones are capable of 20 hours of non-stop use and come with complete cancellation of any noise. Altogether, these headphones are able to deliver automatic use through A.I alongside a welcoming noise free experience!</p>
-        </div>
-        <div id="projectTwo">
-            <h2 class="title">The Barkphones</div>
-                <p class="projectTwoP">Have you ever seen those headphones with cat ears on them? Well, have we got a treat for you! Barkphones, releasing in late 2023, these headphones feature dog ears, an optional nosepiece and an immersive experience for dog lovers alike!</p>
-                <p class="projectTwoP">The headphones also come with a bark</p>
-                <p class="projectTwoP"></p>    
-       </div>
+        <h2 id="slogan"><em>Headphones with a Fun Twist</em></h2>
+
+        <form>
+          <label class="searchForm" for="suggestions">
+            <input
+              class="searchForm"
+              id="suggestions"
+              type="text"
+              name="suggestion"
+              pattern="^[a-zA-Z0-9]$"
+            />
+            <button class="searchForm" id="searchButton" type="button">
+              Search
+            </button>
+          </label>
+        </form>
+      </header>
     </div>
-    
-</body>
+
+    <main>
+      <div id="mainContainer">
+        <h2 id="statsTitle">2023 Statistics</h2>
+        <div class="stats" id="statisticsOne">
+          <h2 class="sales">Sales</h2>
+          <p id="money">$125,635</p>
+        </div>
+        <div class="stats" id="statisticsTwo">
+          <h2 class="customerReviews">Reviews</h2>
+          <p class="reviews">95% Positive / 5% Negative</p>
+        </div>
+
+        <div class="stats" id="statisticsThree">
+          <h2 id="newConsumers">New Consumers</h2>
+          <p id="consumerCount">2000/month</p>
+        </div>
+
+        <div id="sidebar">
+          <ul>
+            <li class="pages">
+              <h2 id="dashboardTitle">
+                <span id="dashboardIcon" class="material-symbols-outlined">  dashboard</span
+              >Dashboard
+              </h2>
+            </li>
+            <li class="pages">
+              <span class="material-symbols-outlined"> home </span>Home
+            </li>
+            <li class="pages">
+              <span class="material-symbols-outlined"> reviews </span>Customer
+              Suggestions
+            </li>
+            <li class="pages">
+              <span class="material-symbols-outlined"> person </span>User
+              Management
+            </li>
+            <li class="pages">
+              <span class="material-symbols-outlined"> settings </span> Settings
+              & Configuration
+            </li>
+            <li class="pages">
+              <span class="material-symbols-outlined"> support_agent </span
+              >Support
+            </li>
+            <li class="pages">
+              <span class="material-symbols-outlined"> schedule </span>Schedule
+            </li>
+            <li class="pages">Logout</li>
+          </ul>
+        </div>
+
+        <div id="projects">
+          <h2 id="projectHeader">Projects in Development</h2>
+          <div id="projectOne">
+            <h2 class="projectOneP">1. ) A.I Controlled Headphones</h2>
+            <p class="projectOneP">
+              These headphones are currently in development and are set to
+              release in late 2025. They are controlled by A.I and allow for a
+              whimsical headphones experience.
+            </p>
+            <p class="projectOneP">
+              The A.I aspect of these headphones allow for an A.I to give song
+              suggestions based on what you currently listen to alongside
+              automatically turning up your phone at your request!
+            </p>
+            <p class="projectOneP">
+              The headphones are capable of 20 hours of non-stop use and come
+              with complete cancellation of any noise. Altogether, these
+              headphones are able to deliver automatic use through A.I alongside
+              a welcoming noise free experience!
+            </p>
+          </div>
+          <div id="projectTwo">
+            <h2 class="title">2. ) Barkphones</h2>
+            <p class="projectTwoP">
+              Have you ever seen those headphones with cat ears on them? Well,
+              have we got a treat for you! Barkphones, releasing in late 2023,
+              these headphones feature dog ears, lifelike dog fur that is soft
+              to the touch, an optional nosepiece and an immersive experience
+              for dog lovers alike!
+            </p>
+            <p class="projectTwoP">
+              To give this immersive experience we have given the headphones a
+              bark that comes on when the battery is low and gets louder the
+              lower the battery gets! The bark is also sounded to signal when
+              the headphones are turning on or powering off.
+            </p>
+            <p class="projectTwoP">
+              Overall, these headphones serve to immerse lovers of the man's
+              best friend!
+            </p>
+          </div>
+          <div id="projectThree">
+            <h2 class="projectThreeP">3. ) Heart Headphones</h2>
+            <p class="projectThreeP">
+              Do you love someone? Well, have we got a treat for you!
+            </p>
+            <p class="projectThreeP">
+              Releasing in 2024, these heart-shaped red velvet colored
+              headphones can reach both you and your lover through wireless and
+              love connection! This might sound crazy, but these headphones can
+              sense love between two individuals and allows for both lovers to
+              listen to their favorite music together!<
+            </p>
+            <p class="projectThreeP">
+              Overall, these headphones are made for you and your lover to have
+              unforgettable days of music together!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="timelineContainer">
+      <div id="timeline">
+        <p class="date">
+          Mar. 2022 - The day that HeadFuns Headphones was found
+        </p>
+        <div class="line"></div>
+
+        <p class="date">
+          June 2022 - The first headphones product created by HeadFuns
+          Headphones, The Clown Headphones releases to the public
+        </p>
+        <div class="line" id="lineTwo"></div>
+        <p class="date">
+          Oct. 2022 - First month to achieve over 1000 consumers
+        </p>
+        <div class="line"></div>
+        <p class="date">Jan. 2023 - 2000 consumer count reached</p>
+        <div class="line"></div>
+      </div>
+    </div>
+    <footer id="footerContainer">
+      <div id="footer">
+        <p id="copyright">&copy; 2023 Jake Mealey. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>
