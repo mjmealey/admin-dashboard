@@ -1,0 +1,307 @@
+@font-face {
+  font-family: righteous;
+  src: url(righteous.ttf);
+}
+
+body {
+  font-family: righteous;
+  background-color: yellow;
+  color: white;
+  overflow: hidden;
+}
+
+.home {
+  position: relative;
+  right: 20px;
+}
+
+#header {
+  display: grid;
+  grid-row: 1;
+  padding: 20px;
+  background-color: green;
+  position: relative;
+  right: 9px;
+  bottom: 10px;
+  grid-template-columns: 1fr 400px 450px;
+  align-items: center;
+  column-gap: 610px;
+  width: 2600px;
+  padding: 10px;
+}
+
+#name {
+  margin-left: 48px;
+}
+
+#searchButton {
+  background-color: yellow;
+  font-family: righteous;
+  border-radius: 20px;
+  border-style: solid;
+  padding: 10px;
+  color: green;
+  border-color: green;
+  font-size: 15px;
+}
+
+.suggestionsForm {
+  display: flex;
+  gap: 10px;
+}
+
+#suggestions {
+  width: 300px;
+}
+
+#mainContainer {
+  display: grid;
+  grid-template-columns: 225px 100px 500px 100px 765px;
+  grid-template-rows: 100px 75px 300px 300px 300px;
+}
+
+#statsTitle {
+  color: green;
+  color: white;
+  background-color: green;
+  display: grid;
+  grid-column: 3;
+  grid-row: 1;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 2000px;
+}
+
+#statisticsOne {
+  background-color: white;
+  display: grid;
+  grid-column: 3;
+  grid-row: 2;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  width: 650px;
+  height: 350px;
+}
+
+.sales {
+  font-size: 75px;
+}
+
+#money {
+  font-size: 50px;
+  display: flex;
+}
+
+#statisticsTwo {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 765px;
+  grid-column: 5;
+  grid-row: 2;
+  height: 350px;
+  color: green;
+  background-color: white;
+}
+
+.customerReviews {
+  font-size: 75px;
+  display: grid;
+  justify-content: center;
+}
+
+.reviews {
+  display: flex;
+  font-size: 50px;
+  background-image: linear-gradient(
+    to right,
+    green,
+    green,
+    green,
+    green,
+    green,
+    red,
+    red,
+    red,
+    red,
+    red
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+#statisticsThree {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 635px;
+  grid-column: 6;
+  grid-row: 2;
+  height: 350px;
+  color: green;
+  background-color: white;
+}
+
+#newConsumers {
+  font-size: 75px;
+  position: relative;
+  top: 10px;
+  right: 30px;
+}
+
+#consumerCount {
+  font-size: 50px;
+  margin-left: 95px;
+}
+
+#sidebar {
+  display: grid;
+  background-color: green;
+  color: white;
+  width: 275px;
+  height: 95vh;
+  position: relative;
+  right: 10px;
+  bottom: 30px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.pages {
+  display: grid;
+  grid-template-rows:6px;
+  position: relative;
+  left: 20px;
+}
+
+#dashboardTitle{
+  margin-right:10px;
+}
+
+ul {
+  display: grid;
+  list-style: none;
+  row-gap: px;
+}
+
+#projectHeader {
+  grid-row: 2;
+}
+
+#projects {
+  color: green;
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 4;
+  column-gap: 187px;
+}
+
+#projectOne {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  grid-row: 3;
+  border-radius: 20px;
+  border-color: green;
+  border-style: solid;
+  width: 500px;
+}
+
+#projectTwo {
+  display: grid;
+  background-color: green;
+  color: white;
+  grid-column: 2;
+  grid-row: 3;
+  border-radius: 20px;
+  border-color: green;
+  border-style: solid;
+  width: 500px;
+  padding: 20px;
+}
+
+#projectThree {
+  display: grid;
+  grid-column: 3;
+  grid-row: 3;
+  background-color: green;
+  color: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#timelineContainer {
+  display: grid;
+  grid-template-columns: 300px 200px 100px 200px;
+  grid-template-rows: 10px 10px 80px;
+}
+
+#timeline {
+  display: flex;
+  padding: 20px;
+  gap: 0px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: green;
+  background-color: green;
+  grid-area: 1/2/4/2;
+  width: 2150px;
+}
+
+.date {
+  display: flex;
+  grid-column: 20px;
+  font-size: 15px;
+}
+
+.line {
+  border-left: 1px;
+  border-color: black;
+  border-style: solid;
+  position: relative;
+  bottom: 50px;
+  right: 195px;
+}
+
+#lineTwo {
+  position: relative;
+  right: 500px;
+}
+
+#footerContainer {
+  display: grid;
+  grid-template-columns: 100px 300px 2200px;
+  grid-template-rows: 50px 300px;
+}
+
+#footer {
+  display: grid;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  background-color: green;
+}
+
+.material-symbols-outlined{
+  position:relative;
+  right:40px;
+  top:3px;
+}
+
+.material-symbols-outlined1{
+  width:200px;
+}
+
+
+#footer{
+  display:flex;
+  justify-content:center;
+}
